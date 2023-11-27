@@ -1,8 +1,8 @@
 ##########################################
 # Site Settings
 
-baseURL = "https://example.com/"
-title = "Hugo Theme MemE"
+baseURL = "https://dougie-r2.github.io/"
+title = "Resilience 2.0"
 languageCode = "en"
 hasCJKLanguage = false
 # Copyright information (Markdown supported)
@@ -25,7 +25,7 @@ pluralizeListTitles = false
 summaryLength = 42
 
 # Enable Emoji emoticons support?
-enableEmoji = false
+enableEmoji = True
 
 # Text to display for footnote return links
 footnoteReturnLinkContents = "↩"
@@ -98,17 +98,17 @@ uglyURLs = false
 # Author’s information
 [author]
     # Name
-    name = "reuixiy"
+    name = "Dougie"
     # Email
-    email = "reuixiy@gmail.com"
+    email = "duckling4579@gmail.com"
     # Motto or introduction
-    motto = "Viva La Vida"
+    motto = "上善若圓"
     # Avatar
     avatar = "/icons/apple-touch-icon.png"
     # Personal website, default: baseURL
-    website = "https://io-oi.me/"
+    website = "https://dougie-r2.github.io/"
     # Twitter
-    twitter = "reuixiy"
+    twitter = "@sleep-redfox"
 
 # Related content
 [related]
