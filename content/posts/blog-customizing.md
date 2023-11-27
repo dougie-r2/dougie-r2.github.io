@@ -15,3 +15,5 @@ First is config.toml file.
 
 
 Create new post : `hugo new posts/<post name>.md`
+
+Git commands
