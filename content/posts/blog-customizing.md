@@ -1,7 +1,7 @@
 +++
 title = 'Blog Customizing'
 date = 2023-11-27T10:52:41+09:00
-draft = true
+draft = false
 +++
 
 This post is about customizing my blog powered by Hugo. I am a newbie in HTML, CSS stuff.
