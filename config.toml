@@ -108,7 +108,7 @@ uglyURLs = false
     # Personal website, default: baseURL
     website = "https://dougie-r2.github.io/"
     # Twitter
-    twitter = "@sleep-redfox"
+    twitter = "sleep_redfox"
 
 # Related content
 [related]
