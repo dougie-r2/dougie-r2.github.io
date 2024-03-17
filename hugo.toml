@@ -53,7 +53,6 @@ expiryDate = ["expiryDate"]
   # category = "categories"
 
 # Enable to get proper Mathjax support
-global_mathjax = true
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
@@ -87,7 +86,7 @@ global_mathjax = true
 
   homeSubtitlePrinter = true
   scrollToTop = true 
-  global_mathjax = false
+  global_mathjax = true
   readTime = true
   readTimeSeparator = "\u2026 \u23F2 Reading Time:"
   # legacyLayout = false
