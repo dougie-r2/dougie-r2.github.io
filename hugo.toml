@@ -53,6 +53,7 @@ expiryDate = ["expiryDate"]
   # category = "categories"
 
 # Enable to get proper Mathjax support
+global_mathjax = true
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
