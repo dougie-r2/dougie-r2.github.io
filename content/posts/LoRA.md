@@ -29,6 +29,7 @@ However, I rather focus on the a letter D(Decomposition) than SVD. There are mor
 
 
 In the paper, there is an equation (3).  
+$ \Delta W = AB $  
 $\Delta W = AB$  
 $$\Delta W = AB$$  
 [\Delta W = AB]  
