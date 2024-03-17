@@ -61,7 +61,7 @@ global_mathjax = true
         enable = true
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['\[', '\]'], ['$$', '$$']]
-          inline = [['\(', '\)'], ['$', '$']]
+          inline = [['\(', '\)']]
 
 
 [params]
