@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>유유자적</title>
+    <link>https://dougie-r2.github.io/</link>
+    <description>Recent content on 유유자적</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 17 Mar 2024 18:56:42 +0900</lastBuildDate><atom:link href="https://dougie-r2.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://dougie-r2.github.io/about/</link>
+      <pubDate>Sun, 17 Mar 2024 19:01:01 +0900</pubDate>
+      
+      <guid>https://dougie-r2.github.io/about/</guid>
+      <description>about me.</description>
+    </item>
+    
+    <item>
+      <title>First Post</title>
+      <link>https://dougie-r2.github.io/posts/first-post/</link>
+      <pubDate>Sun, 17 Mar 2024 18:56:42 +0900</pubDate>
+      
+      <guid>https://dougie-r2.github.io/posts/first-post/</guid>
+      <description>Test pages</description>
+    </item>
+    
+  </channel>
+</rss>
