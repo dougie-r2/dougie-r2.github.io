@@ -31,6 +31,8 @@ However, I rather focus on the a letter D(Decomposition) than SVD. There are mor
 In the paper, there is an equation (3).  
 $\Delta W = AB$  
 $$\Delta W = AB$$  
+[\Delta W = AB]  
+(\Delta W = AB)  
 Without LoRA, We have to fine-tuning the whole $W$ matrix.(left-side of equation)  
 With LoRA, We only need to fine-tuning matrix A and B.(right-side of equation)
 
