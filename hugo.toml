@@ -23,7 +23,6 @@ hasCJKLanguage = true
 rssLimit = 10
 
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-enableEmoji = true
 
 #[services]
 #  [services.disqus]
@@ -80,7 +79,7 @@ expiryDate = ["expiryDate"]
   # gitUrl = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
 
   justifyContent = false
-
+  enableEmoji = true
   relatedPosts = true
   code_copy_button = true
 
