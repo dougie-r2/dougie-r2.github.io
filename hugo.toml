@@ -3,17 +3,17 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 theme = "hermit-v2"
 
-[languages]
-  [languages.en]
-    title = '유유자적'
-    [languages.en.params]
-      homeSubtitle = "上德不德是以有德, 下德不失德是以無德"
-    weight = 1
+# [languages]
+#  [languages.en]
+#    title = '유유자적'
+#    [languages.en.params]
+#      homeSubtitle = "上德不德是以有德, 下德不失德是以無德"
+#    weight = 1
 
  
 languageCode = "en-us"
 
-# title = "CHANGE ME"
+title = "유유자적"
 # enableGitInfo = true
 
 pygmentsCodefences  = true
@@ -73,7 +73,7 @@ expiryDate = ["expiryDate"]
   # images = [""]
   themeColor = "#494f5c"
 
-  #homeSubtitle = "Continuing Hermit's legacy to be minimal and fast theme"
+  homeSubtitle = "上德不德是以有德, 下德不失德是以無德"
   footerCopyright = ' <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   # bgImg = ""
   # gitUrl = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
@@ -116,4 +116,9 @@ expiryDate = ["expiryDate"]
   [[menu.main]]
     name = "About"
     url = "/about/"
+    weight = 20
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
     weight = 20

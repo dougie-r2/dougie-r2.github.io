@@ -5,7 +5,8 @@
     <link>http://localhost:1313/en/</link>
     <description>Recent content on 유유자적</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Sun, 17 Mar 2024 19:01:01 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -16,11 +17,25 @@
       <description>about me.</description>
     </item>
     <item>
-      <title>First Post</title>
-      <link>http://localhost:1313/en/posts/first-post/</link>
-      <pubDate>Sun, 17 Mar 2024 18:56:42 +0900</pubDate>
-      <guid>http://localhost:1313/en/posts/first-post/</guid>
-      <description>Test pages</description>
+      <title>LoRA</title>
+      <link>http://localhost:1313/en/posts/lora/</link>
+      <pubDate>Wed, 31 Jan 2024 14:50:41 +0900</pubDate>
+      <guid>http://localhost:1313/en/posts/lora/</guid>
+      <description>Reference https://arxiv.org/abs/2106.09685 Hugging Face&amp;rsquo;s PEFT library Low-Rank Adaption&#xA;The concept of rank appears in Linear Algebra.&#xA;The rank of a matrix A refers to&#xA;the number of linearly independent columns of A the dimension of the vector space spanned by its columns(independent columns) For the details, see the Linear Algebra posts.&#xA;I didn&amp;rsquo;t know about PEFT(Parameter-Efficient Fine-Tuning) until I saw LoRA.&#xA;It has several advantages.&#xA;Cost efficient for training Less time consuming to train Can save only adapter model At first, I was perplexed by the concept of SVD(Singular Value Decomposition) since I was not and am not fully understand it.</description>
+    </item>
+    <item>
+      <title>Making a New Blog</title>
+      <link>http://localhost:1313/en/posts/blog-customizing/</link>
+      <pubDate>Mon, 27 Nov 2023 10:52:41 +0900</pubDate>
+      <guid>http://localhost:1313/en/posts/blog-customizing/</guid>
+      <description>Reference https://chrisjhart.com/Creating-A-Simple-Free-Blog-Hugo/ Hugo website This post is about making and customizing my own blog powered by Hugo. I am new to HTML, CSS things.&#xA;So I am going to write down to memorize some features.&#xA;Create a new blog To install Hugo on your computer(windows), copy and paste the followings. Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser&#xD;Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression&#xD;scoop install hugo-extended&#xD;hugo new site &amp;lt;folder name&amp;gt; Install git</description>
+    </item>
+    <item>
+      <title>Yes I do have a blog now</title>
+      <link>http://localhost:1313/en/posts/background/</link>
+      <pubDate>Thu, 23 Nov 2023 17:06:51 +0900</pubDate>
+      <guid>http://localhost:1313/en/posts/background/</guid>
+      <description>What a day! I always contemplate starting my own blog for years. It was difficult journey for me. However with help of Hugo and Github Action(h/t to Christopher Hart), I now have a blog. :smile:&#xA;I am not a genius, I don&amp;rsquo;t have a good memory skill, I am not a hardworking person. I am more like a slow leaner. But I don&amp;rsquo;t give up easily.(Yeah, I do sometime give up :rofl:)</description>
     </item>
   </channel>
 </rss>

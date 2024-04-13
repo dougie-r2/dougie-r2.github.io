@@ -723,6 +723,30 @@ a.footnote-ref {
       {{- with .Site.Params.tagSymbol | default "#" -}}content: "{{ . }}"{{- end -}}
     }
   }
+
+  /* Add the new tag list styles */
+  .tag-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tag-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .tag-link {
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .tag-link:hover {
+    background-color: #ccc;
+  }
   .category {
     margin-right: .5em;
 

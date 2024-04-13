@@ -4,18 +4,233 @@
 		<link>http://localhost:1313/en/posts/</link>
 		<description>Recent content in Posts on 유유자적</description>
 		<generator>Hugo -- gohugo.io</generator>
-		<language>en</language>
-		<lastBuildDate>Sun, 17 Mar 2024 18:56:42 +0900</lastBuildDate>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Wed, 31 Jan 2024 14:50:41 +0900</lastBuildDate>
 		<atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
-			<title>First Post</title>
-			<link>http://localhost:1313/en/posts/first-post/</link>
-			<pubDate>Sun, 17 Mar 2024 18:56:42 +0900</pubDate>
+			<title>LoRA</title>
+			<link>http://localhost:1313/en/posts/lora/</link>
+			<pubDate>Wed, 31 Jan 2024 14:50:41 +0900</pubDate>
 			
-			<guid>http://localhost:1313/en/posts/first-post/</guid>
+			<guid>http://localhost:1313/en/posts/lora/</guid>
 			<description><![CDATA[%!s(<nil>)]]></description>
-			<content type="html"><![CDATA[<p>Test pages</p>
+			<content type="html"><![CDATA[<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2106.09685">https://arxiv.org/abs/2106.09685</a></li>
+<li><a href="https://huggingface.co/docs/peft/v0.7.1/en/index">Hugging Face&rsquo;s PEFT library</a></li>
+</ul>
+<p>Low-Rank Adaption</p>
+<p>The concept of <strong><code>rank</code></strong> appears in Linear Algebra.<br>
+The rank of a matrix A refers to</p>
+<ul>
+<li>the number of linearly independent columns of A</li>
+<li>the dimension of the vector space spanned by its columns(independent columns)</li>
+</ul>
+<p>For the details, see the <strong>Linear Algebra</strong> posts.</p>
+<p>I didn&rsquo;t know about <strong>PEFT(Parameter-Efficient Fine-Tuning)</strong> until I saw LoRA.<br>
+It has several advantages.</p>
+<ol>
+<li>Cost efficient for training</li>
+<li>Less time consuming to train</li>
+<li>Can save only adapter model</li>
+</ol>
+<p>At first, I was perplexed by the concept of SVD(Singular Value Decomposition) since I was not and am not fully understand it. I thought I should have known it before I try to understand this LoRA.</p>
+<p>However, I rather focus on the a letter D(Decomposition) than SVD. There are more than one matrix decomposition method such as LU, QR etc. Anyway the point is that we can decompose a matrix into 2 or more matrices. For instance, matrix W can be decomposed into matrix A and B. Don&rsquo;t forget that if we interpret in reverse, it also means we can multiply 2 or more matrices into a matrix.</p>
+<p>In the paper, there is an equation (3).<br>
+$ \Delta W = AB $<br>
+$\Delta W = AB$<br>
+</p>
+$$\Delta W = AB$$
+<p><br>
+[\Delta W = AB]<br>
+(\Delta W = AB)<br>
+Without LoRA, We have to fine-tuning the whole $W$ matrix.(left-side of equation)<br>
+With LoRA, We only need to fine-tuning matrix A and B.(right-side of equation)</p>
+<p><em>&ldquo;Why do you even bother yourself since you need to adjust two matices with LoRA?&rdquo;</em></p>
+<p>Let&rsquo;s say matrix $W$ is 100x120 matrix. Then We have to fine-tuning 12,000 parameters.<br>
+If matrix A is 100x20(r) and matrix B is 20(r)x120, then we merely have to fine-tuning 4,400 parameters. Imagine r(rank) is less than 20 like 8. Hmm&hellip;800+960&hellip;1760 ?!<br>
+Well, This is the beauty of Math. :heart_eyes:</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Making a New Blog</title>
+			<link>http://localhost:1313/en/posts/blog-customizing/</link>
+			<pubDate>Mon, 27 Nov 2023 10:52:41 +0900</pubDate>
+			
+			<guid>http://localhost:1313/en/posts/blog-customizing/</guid>
+			<description><![CDATA[%!s(<nil>)]]></description>
+			<content type="html"><![CDATA[<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://chrisjhart.com/Creating-A-Simple-Free-Blog-Hugo/">https://chrisjhart.com/Creating-A-Simple-Free-Blog-Hugo/</a></li>
+<li><a href="https://gohugo.io/getting-started/quick-start/">Hugo website</a></li>
+</ul>
+<p>This post is about making and customizing my own blog powered by Hugo. I am new to HTML, CSS things.<br>
+So I am going to write down to memorize some features.</p>
+<h3 id="create-a-new-blog">Create a new blog</h3>
+<ol>
+<li>To install Hugo on your computer(windows), copy and paste the followings.</li>
+</ol>
+<pre tabindex="0"><code>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+scoop install hugo-extended
+hugo new site &lt;folder name&gt;
+</code></pre><ol start="2">
+<li>
+<p>Install git<br>
+<a href="https://git-scm.com/download/win">git install page for windows</a><br>
+After you have installed git, Use <strong>git bash</strong> for all the steps.</p>
+</li>
+<li>
+<p>Install theme<br>
+I choose the &ldquo;meme&rdquo; theme. Just choose a theme as your preference.<br>
+Meme theme Links : <a href="https://github.com/reuixiy/hugo-theme-meme?tab=readme-ov-file">https://github.com/reuixiy/hugo-theme-meme?tab=readme-ov-file</a><br>
+Ususally there are some explanations how to install a theme.</p>
+</li>
+<li>
+<p>Create a new post<br>
+<code>hugo new posts/my-first-post.md</code></p>
+</li>
+<li>
+<p>Create a new github repository<br>
+make new repo like <code>&lt;username&gt;.github.io</code></p>
+</li>
+<li>
+<p>Create hugo.yaml in .github/workflows directory<br>
+I don&rsquo;t know much about yaml file, so just copy and paste the follwings as I did.</p>
+</li>
+</ol>
+<pre tabindex="0"><code># Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: Deploy Hugo site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: &#34;pages&#34;
+  cancel-in-progress: false
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.120.4
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          &amp;&amp; sudo dpkg -i ${{ runner.temp }}/hugo.deb          
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+      - name: Install Node.js dependencies
+        run: &#34;[[ -f package-lock.json || -f npm-shrinkwrap.json ]] &amp;&amp; npm ci || true&#34;
+      - name: Build with Hugo
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL &#34;${{ steps.pages.outputs.base_url }}/&#34;          
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./public
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3
+</code></pre><ol start="7">
+<li>
+<p>Connect local repo to remote repo<br>
+<code>git remote add origin &lt;repo_URL&gt;</code></p>
+</li>
+<li>
+<p>Do as usual as you do git commit and push<br>
+And then go to your github repo, click <strong>setting</strong> -&gt; <strong>Action</strong> -&gt; <strong>general</strong> -&gt; scroll down and give permission on read and write.</p>
+</li>
+</ol>
+<p>When you push your commits and open your page, you can see your own blog!</p>
+<h3 id="customize-blog">Customize Blog</h3>
+<p>To customize some features, modify <code>config.toml</code> file.</p>
+<ul>
+<li>baseURL : my github pages&rsquo;s URL</li>
+<li>title : my blog&rsquo;s name</li>
+<li>Author&rsquo;s information : my social information</li>
+</ul>
+<p>Create new post : <code>hugo new posts/&lt;post name&gt;.md</code></p>
+<p>Git commands for deploying</p>
+<ol>
+<li><code>git add .</code></li>
+<li><code>git commit -m &quot;&lt;message&gt;&quot;</code></li>
+<li><code>git push origin &lt;remote_repo&gt;</code></li>
+</ol>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Yes I do have a blog now</title>
+			<link>http://localhost:1313/en/posts/background/</link>
+			<pubDate>Thu, 23 Nov 2023 17:06:51 +0900</pubDate>
+			
+			<guid>http://localhost:1313/en/posts/background/</guid>
+			<description><![CDATA[%!s(<nil>)]]></description>
+			<content type="html"><![CDATA[<p>What a day! I always contemplate starting my own blog for years. It was difficult journey for me. However with help of Hugo and Github Action(h/t to <a href="https://chrisjhart.com/Creating-A-Simple-Free-Blog-Hugo/">Christopher Hart</a>), I now have a blog. :smile:</p>
+<p>I am not a genius, I don&rsquo;t have a good memory skill, I am not a hardworking person. I am more like a slow leaner.
+But I don&rsquo;t give up easily.(Yeah, I do sometime give up :rofl:)</p>
+<p>One of my life goal was just getting know what the Frouier transform is.</p>
+<p>I will write down what I think and what I know.<br>
+This blog can be my library, my diary, and myself.</p>
+<p>The question that I had while I was studying<br>
+I have been through</p>
+<p>In mathematics, you don&rsquo;t understand things. You just get used to them. - by John von Neumann</p>
+<p>This is the life I think.</p>
+<p>Main resources</p>
+<ul>
+<li>MIT lecture on Youtube (Pf.Gilbert Strang)</li>
+<li>3Blue1Brown</li>
+<li></li>
+</ul>
 ]]></content>
 		</item>
 		
