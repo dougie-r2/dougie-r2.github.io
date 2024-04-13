@@ -14,7 +14,7 @@
       <link>http://localhost:1313/en/posts/lora/</link>
       <pubDate>Wed, 31 Jan 2024 14:50:41 +0900</pubDate>
       <guid>http://localhost:1313/en/posts/lora/</guid>
-      <description>Reference https://arxiv.org/abs/2106.09685 Hugging Face&amp;rsquo;s PEFT library Low-Rank Adaption&#xA;The concept of rank appears in Linear Algebra.&#xA;The rank of a matrix A refers to&#xA;the number of linearly independent columns of A the dimension of the vector space spanned by its columns(independent columns) For the details, see the Linear Algebra posts.&#xA;I didn&amp;rsquo;t know about PEFT(Parameter-Efficient Fine-Tuning) until I saw LoRA.&#xA;It has several advantages.&#xA;Cost efficient for training Less time consuming to train Can save only adapter model At first, I was perplexed by the concept of SVD(Singular Value Decomposition) since I was not and am not fully understand it.</description>
+      <description>Reference https://arxiv.org/abs/2106.09685 Hugging Face&amp;rsquo;s PEFT library Low-Rank Adaption The concept of rank appears in Linear Algebra.&#xA;The rank of a matrix A refers to&#xA;the number of linearly independent columns of A the dimension of the vector space spanned by its columns(independent columns) For the details, see the Linear Algebra posts.&#xA;I didn&amp;rsquo;t know about PEFT(Parameter-Efficient Fine-Tuning) until I saw LoRA.&#xA;It has several advantages.&#xA;Cost efficient for training Less time consuming to train Can save only adapter model At first, I was perplexed by the concept of SVD(Singular Value Decomposition) since I was not and am not fully understand it.</description>
     </item>
   </channel>
 </rss>

@@ -21,9 +21,9 @@
 <li><a href="https://arxiv.org/abs/2106.09685">https://arxiv.org/abs/2106.09685</a></li>
 <li><a href="https://huggingface.co/docs/peft/v0.7.1/en/index">Hugging Face&rsquo;s PEFT library</a></li>
 </ul>
-<p>Low-Rank Adaption</p>
+<h3 id="low-rank-adaption">Low-Rank Adaption</h3>
 <p>The concept of <strong><code>rank</code></strong> appears in Linear Algebra.<br>
-The rank of a matrix A refers to</p>
+The <strong>rank of a matrix A</strong> refers to</p>
 <ul>
 <li>the number of linearly independent columns of A</li>
 <li>the dimension of the vector space spanned by its columns(independent columns)</li>
@@ -36,22 +36,27 @@ It has several advantages.</p>
 <li>Less time consuming to train</li>
 <li>Can save only adapter model</li>
 </ol>
-<p>At first, I was perplexed by the concept of SVD(Singular Value Decomposition) since I was not and am not fully understand it. I thought I should have known it before I try to understand this LoRA.</p>
+<p>At first, I was perplexed by the concept of <strong>SVD(Singular Value Decomposition)</strong> since I was not and am not fully understand it. I thought I should have known it before I try to understand this LoRA.</p>
 <p>However, I rather focus on the a letter D(Decomposition) than SVD. There are more than one matrix decomposition method such as LU, QR etc. Anyway the point is that we can decompose a matrix into 2 or more matrices. For instance, matrix W can be decomposed into matrix A and B. Don&rsquo;t forget that if we interpret in reverse, it also means we can multiply 2 or more matrices into a matrix.</p>
+<p>Definitions :</p>
+<ul>
+<li>Pre-trained weight matrix = $W_0 \in \mathbb{R}^{d \times k}$</li>
+<li>Rank = $r \ll min(d,k)$</li>
+<li>$B \in \mathbb{R}^{d \times r}$</li>
+<li>$A \in \mathbb{R}^{r \times k}$</li>
+</ul>
 <p>In the paper, there is an equation (3).<br>
-$ \Delta W = AB $<br>
-$\Delta W = AB$<br>
-</p>
-$$\Delta W = AB$$
-<p><br>
-[\Delta W = AB]<br>
-(\Delta W = AB)<br>
-Without LoRA, We have to fine-tuning the whole $W$ matrix.(left-side of equation)<br>
-With LoRA, We only need to fine-tuning matrix A and B.(right-side of equation)</p>
-<p><em>&ldquo;Why do you even bother yourself since you need to adjust two matices with LoRA?&rdquo;</em></p>
-<p>Let&rsquo;s say matrix $W$ is 100x120 matrix. Then We have to fine-tuning 12,000 parameters.<br>
-If matrix A is 100x20(r) and matrix B is 20(r)x120, then we merely have to fine-tuning 4,400 parameters. Imagine r(rank) is less than 20 like 8. Hmm&hellip;800+960&hellip;1760 ?!<br>
-Well, This is the beauty of Math. :heart_eyes:</p>
+$h = W_0 x + \Delta W x = W_0 x + BAx$<br>
+So $\Delta W = AB$</p>
+<p>Without LoRA, We have to fine-tuning the whole $\Delta W$ matrix.<br>
+With LoRA, We only need to fine-tune matrix $A$ and $B$.</p>
+<p><em>&ldquo;Why do you even bother yourself since you just need to adjust two matices with LoRA?&rdquo;</em></p>
+<p>Here is the example for efficiency.</p>
+<blockquote>
+<p>Let&rsquo;s say matrix $\Delta W$ is 100x120 matrix. Then We have to fine-tune 12,000 parameters.<br>
+If matrix $A$ is 100x20($r$) and matrix $B$ is 20($r$)x120, then we merely have to fine-tune &gt;4,400 parameters. Imagine $r$(<code>rank</code>) is less than 20 like 8. Hmm&hellip;800+960&hellip;1760 ?!</p>
+</blockquote>
+<p>Well, This is the beauty of Math. :heart_eyes:</p>
 ]]></content>
 		</item>
 		
