@@ -3,7 +3,6 @@ title = 'LoRA'
 date = 2024-01-31T14:50:41+09:00
 draft = false
 tags = ["PEFT"]
-mathjax = true
 +++
 
 ### Reference
