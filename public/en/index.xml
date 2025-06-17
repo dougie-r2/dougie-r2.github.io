@@ -4,38 +4,45 @@
     <title>유유자적</title>
     <link>http://localhost:1313/en/</link>
     <description>Recent content on 유유자적</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 17 Mar 2024 19:01:01 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>무제</title>
+      <link>http://localhost:1313/en/posts/background/</link>
+      <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/background/</guid>
+      <description>&lt;p&gt;인터넷에 나만의 공간을 만들려고 했었지만 front 쪽 지식이 없어 힘들었다. 다행이 현재 LLM의 도움으로 인해 Github Pages와 Hugo를 사용하여 이 공간을 만들 수 있게 되었다.&#xA;여기는 나의 작은 도서관이며 나의 가치관과 생각 등을 정리하려고 한다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Probability001</title>
+      <link>http://localhost:1313/en/posts/math/probability001/</link>
+      <pubDate>Thu, 18 Apr 2024 01:08:51 +0900</pubDate>
+      <guid>http://localhost:1313/en/posts/math/probability001/</guid>
+      <description>&lt;h3 id=&#34;probability&#34;&gt;Probability&lt;/h3&gt;&#xA;&lt;p&gt;This probability series are based on the book &lt;code&gt;Introduction to Probabilty&lt;/code&gt; by Prf.Joe Blitzstein and his Harvard lectures on Youtube.&#xA;I try to summarize essential parts as easily as possible and explain some paramount concepts for me and those who struggle to understand math like me :grinning:&lt;/p&gt;&#xA;&lt;p&gt;Why we need probability?&lt;br&gt;&#xA;It is important to ask the reason whenever I study a concept, I always want to know why do I need this in my life? and what is the purpose of it?&lt;br&gt;&#xA;Well, you often can hear the words like &amp;lsquo;bet&amp;rsquo;, &amp;rsquo;likely&amp;rsquo;, &amp;lsquo;uncertainty&amp;rsquo; etc in all the places. These words are related to probability.&lt;br&gt;&#xA;The origin of probability is from gamble. A study from Gamble! What a study it is!!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About</title>
       <link>http://localhost:1313/en/about/</link>
       <pubDate>Sun, 17 Mar 2024 19:01:01 +0900</pubDate>
       <guid>http://localhost:1313/en/about/</guid>
-      <description>about me.</description>
+      <description>&lt;p&gt;about me.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LoRA</title>
-      <link>http://localhost:1313/en/posts/lora/</link>
+      <link>http://localhost:1313/en/posts/ml/lora/</link>
       <pubDate>Wed, 31 Jan 2024 14:50:41 +0900</pubDate>
-      <guid>http://localhost:1313/en/posts/lora/</guid>
-      <description>Reference https://arxiv.org/abs/2106.09685 Hugging Face&amp;rsquo;s PEFT library Low-Rank Adaption The concept of rank appears in Linear Algebra.&#xA;The rank of a matrix A refers to&#xA;the number of linearly independent columns of A the dimension of the vector space spanned by its columns(independent columns) For the details, see the Linear Algebra posts.&#xA;I didn&amp;rsquo;t know about PEFT(Parameter-Efficient Fine-Tuning) until I saw LoRA.&#xA;It has several advantages.&#xA;Cost efficient for training Less time consuming to train Can save only adapter model At first, I was perplexed by the concept of SVD(Singular Value Decomposition) since I was not and am not fully understand it.</description>
+      <guid>http://localhost:1313/en/posts/ml/lora/</guid>
+      <description>&lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2106.09685&#34;&gt;https://arxiv.org/abs/2106.09685&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://huggingface.co/docs/peft/v0.7.1/en/index&#34;&gt;Hugging Face&amp;rsquo;s PEFT library&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;low-rank-adaption&#34;&gt;Low-Rank Adaption&lt;/h3&gt;&#xA;&lt;p&gt;The concept of &lt;strong&gt;&lt;code&gt;rank&lt;/code&gt;&lt;/strong&gt; appears in Linear Algebra.&lt;br&gt;&#xA;The &lt;strong&gt;rank of a matrix A&lt;/strong&gt; refers to&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;the number of linearly independent columns of A&lt;/li&gt;&#xA;&lt;li&gt;the dimension of the vector space spanned by its columns(independent columns)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;For the details, see the &lt;strong&gt;Linear Algebra&lt;/strong&gt; posts.&lt;/p&gt;&#xA;&lt;p&gt;I didn&amp;rsquo;t know about &lt;strong&gt;PEFT(Parameter-Efficient Fine-Tuning)&lt;/strong&gt; until I saw LoRA.&lt;br&gt;&#xA;It has several advantages.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Cost efficient for training&lt;/li&gt;&#xA;&lt;li&gt;Less time consuming to train&lt;/li&gt;&#xA;&lt;li&gt;Can save only adapter model&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;At first, I was perplexed by the concept of &lt;strong&gt;SVD(Singular Value Decomposition)&lt;/strong&gt; since I was not and am not fully understand it. I thought I should have known it before I try to understand this LoRA.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Making a New Blog</title>
-      <link>http://localhost:1313/en/posts/blog-customizing/</link>
+      <link>http://localhost:1313/en/posts/ilsang/blog-customizing/</link>
       <pubDate>Mon, 27 Nov 2023 10:52:41 +0900</pubDate>
-      <guid>http://localhost:1313/en/posts/blog-customizing/</guid>
-      <description>Reference https://chrisjhart.com/Creating-A-Simple-Free-Blog-Hugo/ Hugo website This post is about making and customizing my own blog powered by Hugo. I am new to HTML, CSS things.&#xA;So I am going to write down to memorize some features.&#xA;Create a new blog To install Hugo on your computer(windows), copy and paste the followings. Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser&#xD;Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression&#xD;scoop install hugo-extended&#xD;hugo new site &amp;lt;folder name&amp;gt; Install git</description>
-    </item>
-    <item>
-      <title>Yes I do have a blog now</title>
-      <link>http://localhost:1313/en/posts/background/</link>
-      <pubDate>Thu, 23 Nov 2023 17:06:51 +0900</pubDate>
-      <guid>http://localhost:1313/en/posts/background/</guid>
-      <description>What a day! I always contemplate starting my own blog for years. It was difficult journey for me. However with help of Hugo and Github Action(h/t to Christopher Hart), I now have a blog. :smile:&#xA;I am not a genius, I don&amp;rsquo;t have a good memory skill, I am not a hardworking person. I am more like a slow leaner. But I don&amp;rsquo;t give up easily.(Yeah, I do sometime give up :rofl:)</description>
+      <guid>http://localhost:1313/en/posts/ilsang/blog-customizing/</guid>
+      <description>&lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://chrisjhart.com/Creating-A-Simple-Free-Blog-Hugo/&#34;&gt;https://chrisjhart.com/Creating-A-Simple-Free-Blog-Hugo/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34;&gt;Hugo website&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This post is about making and customizing my own blog powered by Hugo. I am new to HTML, CSS things.&lt;br&gt;&#xA;So I am going to write down to memorize some features.&lt;/p&gt;&#xA;&lt;h3 id=&#34;create-a-new-blog&#34;&gt;Create a new blog&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;To install Hugo on your computer(windows), copy and paste the followings.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser&#xD;&#xA;Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression&#xD;&#xA;scoop install hugo-extended&#xD;&#xA;hugo new site &amp;lt;folder name&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install git&lt;br&gt;&#xA;&lt;a href=&#34;https://git-scm.com/download/win&#34;&gt;git install page for windows&lt;/a&gt;&lt;br&gt;&#xA;After you have installed git, Use &lt;strong&gt;git bash&lt;/strong&gt; for all the steps.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

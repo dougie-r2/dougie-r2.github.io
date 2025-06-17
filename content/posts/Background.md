@@ -1,29 +1,22 @@
 +++
-title = 'Yes I do have a blog now'
-date = 2023-11-23T17:06:51+09:00
+title = '무제'
+date = 2025-06-17
 draft = false
 +++
 
-What a day! I always contemplate starting my own blog for years. It was difficult journey for me. However with help of Hugo and Github Action(h/t to [Christopher Hart](https://chrisjhart.com/Creating-A-Simple-Free-Blog-Hugo/)), I now have a blog. :smile:
+인터넷에 나만의 공간을 만들려고 했었지만 front 쪽 지식이 없어 힘들었다. 다행이 현재 LLM의 도움으로 인해 Github Pages와 Hugo를 사용하여 이 공간을 만들 수 있게 되었다.
+여기는 나의 작은 도서관이며 나의 가치관과 생각 등을 정리하려고 한다.
 
-I am not a genius, I don't have a good memory skill, I am not a hardworking person. I am more like a slow leaner.
-But I don't give up easily.(Yeah, I do sometime give up :rofl:)
+무엇보다도 나같이 수학을 힘들어하는 이에게 도움을 주고 싶기도 했다.
+나는 수학 천재도 아니며 잘하지도 않는다. 오히려 중학생 시절, 방정식이 나오는 순간부터 수학을 힘들어 했으며 항상 1년 늦게 개념을 이해했다. 
+고2 때는 아예 수학을 잠시 포기하기도 했었고 대학생 때 미적분을 펼치게 될 줄도 몰랐다.
+나의 인생 목표가 푸리에 변환을 이해하는 것이었다면 믿겠는가?
 
-
-One of my life goal was just getting know what the Frouier transform is. 
-
-I will write down what I think and what I know.  
-This blog can be my library, my diary, and myself.
-
-The question that I had while I was studying   
-I have been through
+지금도 수학 실력은 일반 공대생들과 비교할 바가 아니다. 다만 수포자들에게 그리고 미적분(Calculus)과 선형대수학(Linear Algebra)을 해야만 하는 사람들에게 내가 느꼈던 수학의 어려움을 공유하고 쉽게 이해시키고 싶을 따름이다.
+기본적인 것들이지만 그만큼 기초 수학을 다져놓는다면 심화 개념들도 이해하기 쉬워지기 때문에 확실히 짚고 넘어가는 것이 좋다. 
 
 
-In mathematics, you don't understand things. You just get used to them. - by John von Neumann
-
-This is the life I think.
-
-Main resources
+유용한 자료들
 - MIT lecture on Youtube (Pf.Gilbert Strang)
 - 3Blue1Brown
 - 
