@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PEFT on 유유자적</title>
+    <link>http://localhost:1313/en/tags/peft/</link>
+    <description>Recent content in PEFT on 유유자적</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 31 Jan 2024 14:50:41 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/peft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LoRA</title>
+      <link>http://localhost:1313/en/posts/ml/lora/</link>
+      <pubDate>Wed, 31 Jan 2024 14:50:41 +0900</pubDate>
+      <guid>http://localhost:1313/en/posts/ml/lora/</guid>
+      <description>&lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2106.09685&#34;&gt;https://arxiv.org/abs/2106.09685&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://huggingface.co/docs/peft/v0.7.1/en/index&#34;&gt;Hugging Face&amp;rsquo;s PEFT library&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;low-rank-adaption&#34;&gt;Low-Rank Adaption&lt;/h3&gt;&#xA;&lt;p&gt;The concept of &lt;strong&gt;&lt;code&gt;rank&lt;/code&gt;&lt;/strong&gt; appears in Linear Algebra.&lt;br&gt;&#xA;The &lt;strong&gt;rank of a matrix A&lt;/strong&gt; refers to&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;the number of linearly independent columns of A&lt;/li&gt;&#xA;&lt;li&gt;the dimension of the vector space spanned by its columns(independent columns)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;For the details, see the &lt;strong&gt;Linear Algebra&lt;/strong&gt; posts.&lt;/p&gt;&#xA;&lt;p&gt;I didn&amp;rsquo;t know about &lt;strong&gt;PEFT(Parameter-Efficient Fine-Tuning)&lt;/strong&gt; until I saw LoRA.&lt;br&gt;&#xA;It has several advantages.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Cost efficient for training&lt;/li&gt;&#xA;&lt;li&gt;Less time consuming to train&lt;/li&gt;&#xA;&lt;li&gt;Can save only adapter model&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;At first, I was perplexed by the concept of &lt;strong&gt;SVD(Singular Value Decomposition)&lt;/strong&gt; since I was not and am not fully understand it. I thought I should have known it before I try to understand this LoRA.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
