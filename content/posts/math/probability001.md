@@ -6,6 +6,7 @@ toc: false
 images:
 tags: 
   - probability
+catageries: ["math"]
 ---
 
 ### Probability
